@@ -5,19 +5,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Calc Copy Paste</title>
 	<link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/light/style.css" />
 	<link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 	<div class="display">
 		<button>
-			<div class="paste">
+			<div class="icon">
 				<i class="ph-bold ph-clipboard"></i>
 			</div>
 			Paste
 		</button>
-		<div class="result"></div>
-		<div class="types"></div>
+		<div class="capture">
+			<div class="result"></div>
+			<div class="types"></div>
+		</div>
+		<div class="download">
+		</div>
 	</div>
+	<script src="./html2canvas.min.js"></script>
+	<script src="./palettes.js"></script>
 	<script src="./index.js"></script>
 </body>
 </html>
